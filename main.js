@@ -325,8 +325,9 @@ const observerSpy = new IntersectionObserver((entries) => {
                 if (link.getAttribute('href').includes(id)) {
                     link.classList.add('active');
                 }
-                // Special case for Catalogue Preview on Home
-                if (id === 'catalogo-home' && link.getAttribute('href').includes('catalogo.html')) {
+                // Special case for product-related sections to highlight "Catálogo"
+                const catalogueIDs = ['catalogo-home', 'coleccion', 'editorial'];
+                if (catalogueIDs.includes(id) && link.getAttribute('href').includes('catalogo.html')) {
                     link.classList.add('active');
                 }
             });

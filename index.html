@@ -128,6 +128,7 @@
         <!-- SECCIÓN DESTACADOS -->
         <section id="catalogo-home" class="highlights-section section-padding">
             <div class="container">
+                <h2 class="section-title-lux reveal">Tejidos Destacados</h2>
                 <div class="staggered-grid">
                     <div class="staggered-item large reveal product-card" data-category="ponchos"
                         data-name="Poncho Gala"
@@ -158,7 +159,7 @@
         </section>
 
         <!-- SECCIÓN STICKY NARRATIVA -->
-        <section class="sticky-collection-section">
+        <section id="coleccion" class="sticky-collection-section">
             <div class="sticky-media-container">
                 <div class="carousel-sync">
                     <img src="assets/img/manta_lux.png" alt="Editorial 1" class="active" data-index="1">
@@ -185,34 +186,55 @@
             </div>
         </section>
 
-        <!-- SECCIÓN LOOKBOOK -->
-        <section class="lookbook-section section-padding">
+        <!-- SECCIÓN CATÁLOGO BOUTIQUE (ANTES LOOKBOOK) -->
+        <section id="editorial" class="lookbook-section section-padding">
             <div class="container">
-                <h2 class="section-title-lux reveal">Editorial Boutique</h2>
-                <div class="lookbook-grid">
-                    <div class="lookbook-item look-1 reveal product-card" data-category="accesorios"
-                        data-name="Manta de Apego"
+                <h2 class="section-title-lux reveal">Catálogo Boutique</h2>
+
+                <div class="catalogue-grid" id="home-product-grid">
+                    <div class="product-card reveal" data-category="accesorios" data-name="Manta de Apego"
                         data-desc="Una pieza de extrema suavidad, diseñada para brindar confort y calma. Elaborada con las fibras más finas de nuestra selección."
                         data-mat="Lana de Oveja Fina" data-dim="120cm x 120cm" data-price="$35.000">
-                        <img src="assets/img/lookbook.png" alt="Look 1">
+                        <div class="product-img">
+                            <img src="assets/img/lookbook.png" alt="Manta de Apego">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Accesorios</span>
+                            <h3>Manta de Apego</h3>
+                        </div>
                     </div>
-                    <div class="lookbook-item look-2 reveal product-card" data-category="ponchos"
-                        data-name="Poncho Moderno"
+                    <div class="product-card reveal" data-category="ponchos" data-name="Poncho Moderno"
                         data-desc="La reinvención del clásico poncho. Un corte contemporáneo que mantiene la esencia artesanal en cada detalle."
                         data-mat="Lana de Oveja Chilota" data-dim="160cm x 100cm" data-price="$65.000">
-                        <img src="assets/img/poncho_mod.png" alt="Look 2">
+                        <div class="product-img">
+                            <img src="assets/img/poncho_mod.png" alt="Poncho Moderno">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Colección</span>
+                            <h3>Poncho Moderno</h3>
+                        </div>
                     </div>
-                    <div class="lookbook-item look-3 reveal product-card" data-category="ponchos"
-                        data-name="Poncho Urbano"
+                    <div class="product-card reveal" data-category="ponchos" data-name="Poncho Urbano"
                         data-desc="Diseñado para la ciudad, ofreciendo protección natural y elegancia sobria para el día a día."
                         data-mat="Lana Natural" data-dim="170cm x 110cm" data-price="$60.000">
-                        <img src="assets/img/chaleco.png" alt="Look 3">
+                        <div class="product-img">
+                            <img src="assets/img/chaleco.png" alt="Poncho Urbano">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Urbano</span>
+                            <h3>Poncho Urbano</h3>
+                        </div>
                     </div>
-                    <div class="lookbook-item look-4 reveal product-card" data-category="accesorios"
-                        data-name="Gorro Nómada"
+                    <div class="product-card reveal" data-category="accesorios" data-name="Gorro Nómada"
                         data-desc="Protección y estilo en una sola pieza. Tejido con un punto denso que garantiza calidez en los climas más exigentes."
                         data-mat="100% Lana de Oveja" data-dim="Talla Única" data-price="$18.000">
-                        <img src="assets/img/gorro.png" alt="Look 4">
+                        <div class="product-img">
+                            <img src="assets/img/gorro.png" alt="Gorro Nómada">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Accesorios</span>
+                            <h3>Gorro Nómada</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="lookbook-cta reveal" style="margin-top: 80px; text-align: center;">
