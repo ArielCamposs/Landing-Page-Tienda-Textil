@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Lana | Alta Textilería Boutique en La Ligua</title>
+    <meta name="description"
+        content="Descubra la elegancia de la lana artesanal. Tejidos de lujo hechos a mano en La Ligua, Chile. Ubicados en Ortiz de Rosas.">
+
+    <!-- Branding Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Sophisticated Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Transition Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Luxury Preloader -->
+    <div class="preloader">
+        <img src="assets/img/logo_official_refined.png" alt="Pura Lana" class="preloader-logo">
+        <div class="preloader-text">C a r g a n d o</div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo_official_refined.png" alt="Pura Lana">
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#proceso" id="nav-nosotros">Nosotros</a>
+                <a href="#experiencias">Experiencias</a>
+                <a href="#contacto">Contacto</a>
+                <a href="https://wa.me/56912345678" target="_blank" class="btn-wa mobile-only">
+                    <i class="ph ph-whatsapp-logo"></i>
+                    Contactanos
+                </a>
+            </nav>
+            <a href="https://wa.me/56912345678" target="_blank" class="btn-wa desktop-only">
+                <i class="ph ph-whatsapp-logo"></i>
+                Contactanos
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO INMERSIVO -->
+        <section id="inicio" class="hero">
+            <div class="hero-video-bg">
+                <video autoplay muted loop playsinline poster="assets/img/hero.png">
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-hand-knitting-a-wool-scarf-41610-large.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-bg">
+                <img src="assets/img/hero.png" alt="Pura Lana Atelier">
+            </div>
+            <div class="container hero-content">
+                <h1 class="reveal">
+                    <span class="brand-gradient">Pura Lana</span>
+                    Tradición que<br>Ennoblece
+                </h1>
+                <p class="reveal">Exploramos el equilibrio entre la elegancia moderna y el legado textil chileno a
+                    través de piezas únicas de lana.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MAESTRÍA -->
+        <section id="proceso" class="process-section">
+            <div class="process-image reveal">
+                <img src="assets/img/process.png" alt="Maestría en Telar">
+            </div>
+            <div class="process-content reveal">
+                <span class="badge-lux">Herencia Textil</span>
+                <h2>Un Punto, Una Historia</h2>
+                <p>Nuestras piezas son el resultado de un proceso pausado, donde las manos del artesano guían la fibra
+                    natural hacia una forma atemporal.</p>
+                <p>En Pura Lana, recuperamos el valor de lo eterno sobre lo efímero, creando prendas que trascienden
+                    generaciones.</p>
+                <a href="#contacto" class="btn-explore">Conocer más <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN POR QUÉ LANA NATURAL -->
+        <section class="benefits-section section-padding">
+            <div class="container">
+                <h2 class="section-title-lux reveal">La Nobleza de la Fibra</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item reveal">
+                        <i class="ph ph-sun"></i>
+                        <h4>Termorregulación</h4>
+                        <p>Mantiene el calor en invierno y la frescura en verano de forma natural.</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <i class="ph ph-cloud"></i>
+                        <h4>Transpirabilidad</h4>
+                        <p>La fibra permite que la piel respire evitando la humedad innecesaria.</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <i class="ph ph-leaf"></i>
+                        <h4>Eco-Sostenible</h4>
+                        <p>100% biodegradable y renovable. Un compromiso con nuestra tierra.</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <i class="ph ph-shield-check"></i>
+                        <h4>Durabilidad</h4>
+                        <p>Resistente al paso del tiempo, manteniendo su forma y suavidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DESTACADOS -->
+        <section id="catalogo-home" class="highlights-section section-padding">
+            <div class="container">
+                <div class="staggered-grid">
+                    <div class="staggered-item large reveal product-card" data-category="ponchos"
+                        data-name="Poncho Gala"
+                        data-desc="Nuestra pieza más sofisticada. Tejido con una mezcla premium de lana y seda natural para un brillo y caída excepcionales."
+                        data-mat="Lana Virgen y Seda" data-dim="190cm x 120cm" data-price="$95.000">
+                        <div class="parallax-wrapper">
+                            <img src="assets/img/poncho_gala.png" alt="Colección Ponchos" class="parallax-img">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Colección Inmortal</span>
+                            <h3>Ponchos con Alma</h3>
+                        </div>
+                    </div>
+                    <div class="staggered-item small reveal product-card" data-category="accesorios"
+                        data-name="Chaleco Lux"
+                        data-desc="Un accesorio versátil y elegante. Perfecto para complementar cualquier outfit con la calidez de la lana tejida a mano."
+                        data-mat="100% Lana de Oveja" data-dim="Talla Única" data-price="$45.000">
+                        <div class="parallax-wrapper">
+                            <img src="assets/img/chaleco_lux.png" alt="Accesorios Boutique" class="parallax-img">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Accesorios</span>
+                            <h3>Detalles que Distinguen</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN STICKY NARRATIVA -->
+        <section class="sticky-collection-section">
+            <div class="sticky-media-container">
+                <div class="carousel-sync">
+                    <img src="assets/img/manta_lux.png" alt="Editorial 1" class="active" data-index="1">
+                    <img src="assets/img/bufanda_lux.png" alt="Editorial 2" data-index="2">
+                    <img src="assets/img/lookbook.png" alt="Editorial 3" data-index="3">
+                </div>
+            </div>
+            <div class="scrolling-text-container">
+                <div class="scroll-story-item reveal" data-sync="1">
+                    <h2>La Selección Pura Lana</h2>
+                    <p>Cada vellón es seleccionado por su finura y resistencia, asegurando una experiencia sensorial
+                        única.</p>
+                </div>
+                <div class="scroll-story-item reveal" data-sync="2">
+                    <h2>Arte en cada Hebra</h2>
+                    <p>Nuestros maestros tejedores combinan técnicas ancestrales con una visión estética contemporánea.
+                    </p>
+                </div>
+                <div class="scroll-story-item reveal" data-sync="3">
+                    <h2>Boutique La Ligua</h2>
+                    <p>Visítenos en nuestro atelier para experimentar la suavidad real de la alta textilería chilena.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LOOKBOOK -->
+        <section class="lookbook-section section-padding">
+            <div class="container">
+                <h2 class="section-title-lux reveal">Editorial Boutique</h2>
+                <div class="lookbook-grid">
+                    <div class="lookbook-item look-1 reveal product-card" data-category="accesorios"
+                        data-name="Manta de Apego"
+                        data-desc="Una pieza de extrema suavidad, diseñada para brindar confort y calma. Elaborada con las fibras más finas de nuestra selección."
+                        data-mat="Lana de Oveja Fina" data-dim="120cm x 120cm" data-price="$35.000">
+                        <img src="assets/img/lookbook.png" alt="Look 1">
+                    </div>
+                    <div class="lookbook-item look-2 reveal product-card" data-category="ponchos"
+                        data-name="Poncho Moderno"
+                        data-desc="La reinvención del clásico poncho. Un corte contemporáneo que mantiene la esencia artesanal en cada detalle."
+                        data-mat="Lana de Oveja Chilota" data-dim="160cm x 100cm" data-price="$65.000">
+                        <img src="assets/img/poncho_mod.png" alt="Look 2">
+                    </div>
+                    <div class="lookbook-item look-3 reveal product-card" data-category="ponchos"
+                        data-name="Poncho Urbano"
+                        data-desc="Diseñado para la ciudad, ofreciendo protección natural y elegancia sobria para el día a día."
+                        data-mat="Lana Natural" data-dim="170cm x 110cm" data-price="$60.000">
+                        <img src="assets/img/chaleco.png" alt="Look 3">
+                    </div>
+                    <div class="lookbook-item look-4 reveal product-card" data-category="accesorios"
+                        data-name="Gorro Nómada"
+                        data-desc="Protección y estilo en una sola pieza. Tejido con un punto denso que garantiza calidez en los climas más exigentes."
+                        data-mat="100% Lana de Oveja" data-dim="Talla Única" data-price="$18.000">
+                        <img src="assets/img/gorro.png" alt="Look 4">
+                    </div>
+                </div>
+                <div class="lookbook-cta reveal" style="margin-top: 80px; text-align: center;">
+                    <a href="catalogo.html" class="btn-lux">Explorar Catálogo Completo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUÍA DE CUIDADO -->
+        <section class="care-section section-padding">
+            <div class="container">
+                <h2 class="section-title-lux reveal">Vivir con Lana</h2>
+                <div class="care-grid">
+                    <div class="care-card reveal">
+                        <i class="ph ph-drop-half"></i>
+                        <h4>Lavado</h4>
+                        <p>Siempre a mano con agua fría y jabón neutro para preservar la fibra natural.</p>
+                    </div>
+                    <div class="care-card reveal">
+                        <i class="ph ph-wind"></i>
+                        <h4>Secado</h4>
+                        <p>En plano, a la sombra. Nunca cuelgue una prenda de lana mojada.</p>
+                    </div>
+                    <div class="care-card reveal">
+                        <i class="ph ph-archive"></i>
+                        <h4>Guardado</h4>
+                        <p>Doblado con espacio para respirar. Evite el uso de ganchos.</p>
+                    </div>
+                </div>
+                <div class="lookbook-cta reveal" style="margin-top: 60px; text-align: center;">
+                    <a href="https://wa.me/56912345678" target="_blank" class="btn-lux">
+                        Solicitar Catálogo Completo (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section id="experiencias" class="testimonials-section section-padding">
+            <div class="container">
+                <h2 class="section-title-lux reveal" style="text-align: center; margin-bottom: 60px;">Experiencias Pura
+                    Lana</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-track">
+                        <!-- Primer Set -->
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"No es solo ropa, es una pieza de arte que te abraza. La calidad de la lana es
+                                inconfundible."</p>
+                            <span class="author">— Eleonora V., Santiago</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Los acabados son de una maestría increíble. Se nota el amor por lo artesanal en cada
+                                detalle."</p>
+                            <span class="author">— Ricardo G., Valparaíso</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Buscaba un regalo especial y encontré una joya. La suavidad es simplemente de otro
+                                mundo."</p>
+                            <span class="author">— Sofía M., Concepción</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Una boutique que honra nuestras raíces con una elegancia contemporánea. Totalmente
+                                recomendado."</p>
+                            <span class="author">— Bernardo H., La Ligua</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"La atención personalizada y la calidad premium me hicieron cliente fiel desde la primera
+                                compra."</p>
+                            <span class="author">— Martina J., Buenos Aires</span>
+                        </div>
+                        <!-- Duplicado para loop infinito -->
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"No es solo ropa, es una pieza de arte que te abraza. La calidad de la lana es
+                                inconfundible."</p>
+                            <span class="author">— Eleonora V., Santiago</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Los acabados son de una maestría increíble. Se nota el amor por lo artesanal en cada
+                                detalle."</p>
+                            <span class="author">— Ricardo G., Valparaíso</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Buscaba un regalo especial y encontré una joya. La suavidad es simplemente de otro
+                                mundo."</p>
+                            <span class="author">— Sofía M., Concepción</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"Una boutique que honra nuestras raíces con una elegancia contemporánea. Totalmente
+                                recomendado."</p>
+                            <span class="author">— Bernardo H., La Ligua</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <i class="ph ph-quotes"></i>
+                            <p>"La atención personalizada y la calidad premium me hicieron cliente fiel desde la primera
+                                compra."</p>
+                            <span class="author">— Martina J., Buenos Aires</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UBICACIÓN Y CONTACTO -->
+        <section id="contacto" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="contact-map-mini reveal">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.463691651582!2d-71.2333333!3d-32.4166667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689947915359a35%3A0x67394ea7d8d21b0!2sLa%20Ligua%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1705620000000!5m2!1ses-419!2scl"
+                                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal">
+                        <form id="landing-form" class="lux-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Nombre Completo</label>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">E-mail</label>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required placeholder=" "></textarea>
+                                <label for="message">Mensaje</label>
+                                <div class="input-line"></div>
+                            </div>
+                            <button type="submit" class="btn-lux" style="width: 100%; margin-top: 1rem;">Enviar
+                                Consulta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Quick View -->
+    <div class="modal-overlay" id="quick-view-modal">
+        <div class="modal-content">
+            <div class="modal-close" id="modal-close">
+                <i class="ph ph-x"></i>
+            </div>
+            <div class="modal-img-side">
+                <img src="" alt="Producto" id="modal-img">
+            </div>
+            <div class="modal-info-side">
+                <span class="tag-lux" id="modal-tag">Colección</span>
+                <h2 id="modal-title">Nombre del Producto</h2>
+                <p class="modal-description" id="modal-desc">Descripción artesanal aquí.</p>
+
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Material</span>
+                        <span id="modal-material">Lana Natural</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Medidas</span>
+                        <span id="modal-dim">180x100 cm</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Precio</span>
+                        <span id="modal-price">$0</span>
+                    </div>
+                </div>
+
+                <a href="#" target="_blank" class="btn-lux" id="modal-wa">
+                    CONSULTAR POR WHATSAPP <i class="ph ph-whatsapp-logo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo_official_refined.png" alt="Pura Lana" class="footer-logo">
+                    <p>La esencia de la lana natural tejida con maestría y pasión.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="#proceso">Maestría</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Pura Lana. Boutique de Alta Textilería.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-float">
+        <i class="ph ph-whatsapp-logo"></i>
+        <span>¿Deseas una asesoría?</span>
+    </a>
+
+    <!-- Chat Assistant Assistant -->
+    <div id="chat-assistant">
+        <div class="chat-hint" id="chat-hint">¿Tienes alguna duda? 👋</div>
+        <div class="chat-bubble" id="chat-trigger">
+            <i class="ph ph-chat-centered-dots"></i>
+        </div>
+
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <span>Asistente Pura Lana</span>
+                <i class="ph ph-x" id="close-chat"></i>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-msg bot">¡Hola! Soy tu asistente. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <div class="chat-footer">
+                <div class="chat-options">
+                    <button class="chat-opt" data-ans="precios">Precios</button>
+                    <button class="chat-opt" data-ans="productos">Productos</button>
+                    <button class="chat-opt" data-ans="horarios">Horarios</button>
+                    <button class="chat-opt" data-ans="ubicacion">Ubicación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

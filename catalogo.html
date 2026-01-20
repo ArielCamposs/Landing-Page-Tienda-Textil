@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | Pura Lana - Alta Textilería</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- Transition Overlay -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Luxury Preloader -->
+    <div class="preloader">
+        <img src="assets/img/logo_official_refined.png" alt="Pura Lana" class="preloader-logo">
+        <div class="preloader-text">C a r g a n d o</div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header id="header" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo_official_refined.png" alt="Pura Lana">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="index.html#proceso">Nosotros</a>
+                <a href="index.html#experiencias">Experiencias</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+            <a href="https://wa.me/56912345678" target="_blank" class="btn-wa desktop-only">
+                <i class="ph ph-whatsapp-logo"></i>
+                Contactanos
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <header class="catalogue-header">
+            <div class="container">
+                <div class="header-content reveal">
+                    <a href="index.html" class="back-link">
+                        <i class="ph ph-arrow-left"></i> Volver al Inicio
+                    </a>
+                    <h1>Catálogo Tejidos</h1>
+                    <p>Una curaduría de nuestras piezas más exclusivas, tejidas íntegramente a mano.</p>
+                </div>
+
+                <nav class="filter-nav reveal">
+                    <div class="filter-btn active" data-filter="all">Todas las Piezas</div>
+                    <div class="filter-btn" data-filter="ponchos">Ponchos</div>
+                    <div class="filter-btn" data-filter="accesorios">Accesorios</div>
+                    <div class="filter-btn" data-filter="lana">Materia Prima</div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="catalogue-grid" id="product-grid">
+                    <!-- Producto 1 -->
+                    <div class="product-card reveal" data-category="ponchos" data-name="Poncho Ancestral"
+                        data-desc="Tejido en telar tradicional con lana 100% de oveja chilota. Una pieza que honra nuestras raíces con un diseño geométrico atemporal."
+                        data-mat="Lana de Oveja Chilota" data-dim="180cm x 110cm" data-price="$75.000">
+                        <div class="product-img">
+                            <img src="assets/img/poncho.png" alt="Poncho Tradicional">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Colección Inmortal</span>
+                            <h3>Poncho Ancestral</h3>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product-card reveal" data-category="accesorios" data-name="Manta Selección"
+                        data-desc="Suavidad extrema para el hogar. Esta manta ha sido cardada a mano para obtener un acabado sedoso y ligero."
+                        data-mat="Mezcla Merino y Alpaca" data-dim="200cm x 150cm" data-price="$85.000">
+                        <div class="product-img">
+                            <img src="assets/img/bufanda.png" alt="Manta Lujo">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Hogar</span>
+                            <h3>Manta Selección</h3>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="product-card reveal" data-category="ponchos" data-name="Poncho City"
+                        data-desc="Diseño vanguardista para la vida urbana. Protección natural contra el frío con un corte moderno y elegante."
+                        data-mat="Lana Natural Teñida" data-dim="160cm x 100cm" data-price="$65.000">
+                        <div class="product-img">
+                            <img src="assets/img/chaleco.png" alt="Poncho Urbano">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Urbano</span>
+                            <h3>Poncho City</h3>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="product-card reveal" data-category="lana" data-name="Vellón Merino"
+                        data-desc="Nuestra materia prima más pura. Vellón de oveja merino seleccionado, ideal para hilados finos o fieltro."
+                        data-mat="Lana Merino 100%" data-dim="Por Kilo" data-price="$15.000">
+                        <div class="product-img">
+                            <img src="assets/img/gorro.png" alt="Ovillo Lana">
+                        </div>
+                        <div class="info-overlay-lux">
+                            <span class="tag-lux">Materia Prima</span>
+                            <h3>Vellón Merino</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Quick View -->
+    <div class="modal-overlay" id="quick-view-modal">
+        <div class="modal-content">
+            <div class="modal-close" id="modal-close">
+                <i class="ph ph-x"></i>
+            </div>
+            <div class="modal-img-side">
+                <img src="" alt="Producto" id="modal-img">
+            </div>
+            <div class="modal-info-side">
+                <span class="tag-lux" id="modal-tag">Colección</span>
+                <h2 id="modal-title">Nombre del Producto</h2>
+                <p class="modal-description" id="modal-desc">Descripción artesanal aquí.</p>
+
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Material</span>
+                        <span id="modal-material">Lana Natural</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Medidas</span>
+                        <span id="modal-dim">180x100 cm</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Precio</span>
+                        <span id="modal-price">$0</span>
+                    </div>
+                </div>
+
+                <a href="#" target="_blank" class="btn-lux" id="modal-wa">
+                    CONSULTAR POR WHATSAPP <i class="ph ph-whatsapp-logo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Assistant Assistant -->
+    <div id="chat-assistant">
+        <div class="chat-hint" id="chat-hint">¿Tienes alguna duda? 👋</div>
+        <div class="chat-bubble" id="chat-trigger">
+            <i class="ph ph-chat-centered-dots"></i>
+        </div>
+
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <span>Asistente Pura Lana</span>
+                <i class="ph ph-x" id="close-chat"></i>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-msg bot">¡Hola! Soy tu asistente. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <div class="chat-footer">
+                <div class="chat-options">
+                    <button class="chat-opt" data-ans="precios">Precios</button>
+                    <button class="chat-opt" data-ans="productos">Productos</button>
+                    <button class="chat-opt" data-ans="horarios">Horarios</button>
+                    <button class="chat-opt" data-ans="ubicacion">Ubicación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo_official_refined.png" alt="Pura Lana" class="footer-logo">
+                    <p>La esencia de la lana natural tejida con maestría y pasión.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="index.html#proceso">Maestría</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Pura Lana. Boutique de Alta Textilería.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Lógica de Filtrado Simple
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const products = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const category = btn.dataset.filter;
+                products.forEach(product => {
+                    if (category === 'all' || product.dataset.category === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
