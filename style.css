@@ -2260,7 +2260,8 @@ body.is-loaded main {
 }
 
 .preloader-logo {
-    width: 180px;
+    width: 60px;
+    /* Base size */
     margin-bottom: 25px;
     mix-blend-mode: screen;
     filter: brightness(1.1) contrast(1.1);
@@ -2271,11 +2272,29 @@ body.is-loaded main {
 .preloader-text {
     font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.8em;
-    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.5em;
+    /* Reduced for better fit */
+    color: rgba(255, 255, 255, 0.6);
+    /* Increased contrast */
     margin-top: 10px;
     font-weight: 300;
+    text-align: center;
+    max-width: 80%;
+    /* Prevention for mobile overflow */
     animation: fade-pulse 2s infinite ease-in-out;
+}
+
+/* Specific Responsive Loader */
+@media (max-width: 768px) {
+    .preloader-logo {
+        width: 50px;
+    }
+
+    .preloader-text {
+        font-size: 0.6rem;
+        letter-spacing: 0.3em;
+        line-height: 1.6;
+    }
 }
 
 /* 2. Reveal Base States */
