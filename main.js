@@ -280,19 +280,22 @@ window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
 
     if (preloader) {
+        const isCatalogue = window.location.href.includes('catalogo.html');
         const preloaderShown = sessionStorage.getItem('preloaderShown');
 
-        if (preloaderShown) {
-            // If already shown in this session, hide immediately
+        if (preloaderShown && !isCatalogue) {
+            // If already shown in this session AND not catalogue, hide immediately
             preloader.style.display = 'none';
             document.body.classList.add('is-loaded');
         } else {
-            // First time in session, show with animation
+            // First time in session OR entering catalogue, show with 2s delay for catalogue
+            const delay = isCatalogue ? 2000 : 800;
+
             setTimeout(() => {
                 preloader.classList.add('fade-out');
                 document.body.classList.add('is-loaded');
                 sessionStorage.setItem('preloaderShown', 'true');
-            }, 800);
+            }, delay);
         }
     }
 });
